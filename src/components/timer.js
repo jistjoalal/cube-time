@@ -17,6 +17,7 @@ export default class Timer extends React.Component {
     const { time } = this.state;
     return (
       <div>
+        <h2>Timer:</h2>
         <Time time={time} />
         <button onClick={this.start}>Start</button>
         <button onClick={this.stop}>Stop</button>

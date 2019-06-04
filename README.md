@@ -9,3 +9,4 @@ A simple rubik's cube timer/log.
 - organize/paginate times
 - average, max/min
 - space-bar controls
+- delete-all button
