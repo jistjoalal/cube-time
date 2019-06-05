@@ -5,11 +5,9 @@ import withStore from "../withStore";
 import Stats from "./stats";
 import TimeList from "./timeList";
 
-export default () => {
-  return (
-    <div>
-      {withStore(Stats)}
-      {withStore(TimeList)}
-    </div>
-  );
-};
+export default () => (
+  <div>
+    {withStore("times", Stats)}
+    {withStore("times", TimeList)}
+  </div>
+);

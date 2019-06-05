@@ -5,7 +5,7 @@ A simple rubik's cube timer/log.
 ## dev notes/todos
 
 - refactor store actions
-- refactor withStore hoc to only react to certain store keys
+- refactor store function to return only specified store keys
 - export saved times to file
 - styles
 - integration tests

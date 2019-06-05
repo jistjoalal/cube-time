@@ -5,22 +5,26 @@ import { store } from "../store";
 class Tracker extends React.Component {
   constructor(props) {
     super(props);
-    this.state = store();
+    const { storeKey } = props;
+    this.state = {
+      [storeKey]: store()[storeKey]
+    };
   }
   componentDidMount() {
     // state reacts to store changes
     window.addEventListener("store", () => {
-      this.setState(store());
+      const { storeKey } = this.props;
+      this.setState({
+        [storeKey]: store()[storeKey]
+      });
     });
   }
   render() {
     const { Child } = this.props;
-    return (
-      <div>
-        <Child {...this.state} />
-      </div>
-    );
+    return <Child {...this.state} />;
   }
 }
 
-export default Child => <Tracker Child={Child} />;
+export default (storeKey, Child) => (
+  <Tracker Child={Child} storeKey={storeKey} />
+);
