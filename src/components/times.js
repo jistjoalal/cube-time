@@ -12,6 +12,7 @@ export default class Times extends React.Component {
     };
   }
   componentDidMount() {
+    // state reacts to store changes
     window.onstorage = () => {
       this.setState({
         times: store().times || []
@@ -23,6 +24,7 @@ export default class Times extends React.Component {
     return (
       <div>
         <h2>Times:</h2>
+        <button onClick={this.removeAll}>Clear</button>
         {times.map(time => (
           <div key={time.savedAt}>
             <Time time={time.time} />
@@ -32,4 +34,8 @@ export default class Times extends React.Component {
       </div>
     );
   }
+  removeAll = e => {
+    const really = window.confirm("Really remove all times?");
+    if (really) actions.removeAllTimes();
+  };
 }

@@ -30,5 +30,8 @@ export const actions = {
     const nTimes = times.filter(({ id }) => time.id !== id);
 
     set({ times: nTimes });
+  },
+  removeAllTimes: () => {
+    set({ times: [] });
   }
 };
