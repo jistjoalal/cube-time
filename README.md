@@ -8,5 +8,4 @@ A simple rubik's cube timer/log.
 - DB-based storage?
 - organize/paginate times
 - average, max/min
-- space-bar controls
 - delete-all button

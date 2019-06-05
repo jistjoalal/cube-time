@@ -20,7 +20,6 @@ export default class Times extends React.Component {
   }
   render() {
     const { times } = this.state;
-    console.log(times);
     return (
       <div>
         <h2>Times:</h2>
