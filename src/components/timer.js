@@ -46,7 +46,6 @@ export default class Timer extends React.Component {
     window.addEventListener("keydown", this.spaceStop);
   }
   spaceStart = e => {
-    e.preventDefault();
     const { running, debounce } = this.state;
     if (debounce) {
       return this.setState({ debounce: false });
@@ -56,11 +55,13 @@ export default class Timer extends React.Component {
     }
   };
   spaceStop = e => {
-    e.preventDefault();
     const { running } = this.state;
-    if (e.key === " " && running) {
-      this.stop();
-      this.setState({ debounce: true });
+    if (e.key === " ") {
+      e.preventDefault();
+      if (running) {
+        this.stop();
+        this.setState({ debounce: true });
+      }
     }
   };
 }
