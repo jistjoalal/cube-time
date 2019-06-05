@@ -9,14 +9,14 @@ export default class TimeData extends React.Component {
   constructor() {
     super();
     this.state = {
-      times: store().times || []
+      times: store().times
     };
   }
   componentDidMount() {
     // state reacts to store changes
     window.onstorage = () => {
       this.setState({
-        times: store().times || []
+        times: store().times
       });
     };
   }

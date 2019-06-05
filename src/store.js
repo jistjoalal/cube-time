@@ -1,7 +1,11 @@
 import uuidv4 from "uuid/v4";
 
 export const store = _ => {
-  return JSON.parse(localStorage.getItem("store")) || {};
+  return (
+    JSON.parse(localStorage.getItem("store")) || {
+      times: []
+    }
+  );
 };
 
 export const set = changes => {
@@ -13,7 +17,7 @@ export const set = changes => {
 
 export const actions = {
   saveTime: time => {
-    const times = store().times || [];
+    const times = store().times;
 
     const nTime = {
       time,
@@ -25,7 +29,7 @@ export const actions = {
     set({ times: nTimes });
   },
   removeTime: time => {
-    const times = store().times || [];
+    const times = store().times;
 
     const nTimes = times.filter(({ id }) => time.id !== id);
 
