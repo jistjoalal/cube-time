@@ -27,14 +27,14 @@ export default class Timer extends React.Component {
     );
   }
   // Timer controls
-  start = e => {
+  start = () => {
     this.setState({ time: 0, start: Date.now(), running: true });
     this.timer = setInterval(() => {
       const { start } = this.state;
       this.setState({ time: Date.now() - start });
     }, 1);
   };
-  stop = e => {
+  stop = () => {
     if (!this.state.running) return;
     this.setState({ running: false });
     clearInterval(this.timer);
@@ -45,18 +45,20 @@ export default class Timer extends React.Component {
     window.addEventListener("keyup", this.spaceStart);
     window.addEventListener("keydown", this.spaceStop);
   }
-  spaceStart = ({ key }) => {
+  spaceStart = e => {
+    e.preventDefault();
     const { running, debounce } = this.state;
     if (debounce) {
       return this.setState({ debounce: false });
     }
-    if (key === " " && !running) {
+    if (e.key === " " && !running) {
       this.start();
     }
   };
-  spaceStop = ({ key }) => {
+  spaceStop = e => {
+    e.preventDefault();
     const { running } = this.state;
-    if (key === " " && running) {
+    if (e.key === " " && running) {
       this.stop();
       this.setState({ debounce: true });
     }
