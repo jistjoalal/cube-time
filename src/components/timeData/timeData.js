@@ -1,11 +1,11 @@
 import React from "react";
 
-import { store } from "../store";
+import { store } from "../../store";
 
 import TimeList from "./timeList";
 import Stats from "./stats";
 
-export default class Times extends React.Component {
+export default class TimeData extends React.Component {
   constructor() {
     super();
     this.state = {

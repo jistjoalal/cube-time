@@ -1,10 +1,10 @@
 import React from "react";
 
-import { actions } from "../store";
+import { actions } from "../../store";
 
-import Time from "./time";
+import Time from "../time";
 
-import "../styles/timeList.css";
+import "./timeList.css";
 
 export default class TimeList extends React.Component {
   render() {

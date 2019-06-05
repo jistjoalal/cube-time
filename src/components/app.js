@@ -2,14 +2,14 @@ import React from "react";
 
 import Title from "./title";
 import Timer from "./timer";
-import Times from "./times";
+import TimeData from "./timeData";
 
 const App = () => {
   return (
     <div>
       <Title />
       <Timer />
-      <Times />
+      <TimeData />
     </div>
   );
 };
