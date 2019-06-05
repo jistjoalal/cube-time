@@ -4,9 +4,16 @@ A simple rubik's cube timer/log.
 
 ## dev notes/todos
 
+- swap out storage event for a custom one
+  - https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
+- export saved times to file
 - styles
 - integration tests
+- PWAify
 - progress charts
+  - track avgs and bests over time
+- flash screen / sound trigger (previous finishes)
+  - like ghost runs in racing games
 - paginate times?
 - DB-based storage?
   - some way of syncing of offline/online storage would be cool
