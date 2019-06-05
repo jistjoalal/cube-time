@@ -1,8 +1,8 @@
 import React from "react";
 
-import { actions } from "../store";
+import { actions } from "../../store";
 
-import Time from "./time";
+import TimerView from "./timerView";
 
 export default class Timer extends React.Component {
   constructor() {
@@ -16,15 +16,7 @@ export default class Timer extends React.Component {
   }
   render() {
     const { time } = this.state;
-    return (
-      <div>
-        <h2>Timer:</h2>
-        <p>Space-Up to start, Space-Down to stop.</p>
-        <Time time={time} />
-        <button onClick={this.start}>Start</button>
-        <button onClick={this.stop}>Stop</button>
-      </div>
-    );
+    return <TimerView time={time} start={this.start} stop={this.stop} />;
   }
   // Timer controls
   start = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Title from "./title";
-import Timer from "./timer";
+import Timer from "./Timer";
 import TimeData from "./timeData";
 
 const App = () => {
