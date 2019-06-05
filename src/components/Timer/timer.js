@@ -2,7 +2,7 @@ import React from "react";
 
 import { actions } from "../../store";
 
-import TimerView from "./timerView";
+import TimerView from "./TimerView";
 
 export default class Timer extends React.Component {
   constructor() {

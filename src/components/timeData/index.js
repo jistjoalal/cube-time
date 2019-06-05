@@ -1,3 +1,3 @@
-import timeData from "./timeData";
+import TimeData from "./TimeData";
 
-export default timeData;
+export default TimeData;

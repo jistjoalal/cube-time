@@ -2,9 +2,9 @@ import React from "react";
 
 import { actions } from "../../store";
 
-import Time from "../time";
+import Time from "../Time";
 
-import "./timeList.css";
+import "./TimeList.css";
 
 export default class TimeList extends React.Component {
   render() {

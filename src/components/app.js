@@ -1,8 +1,8 @@
 import React from "react";
 
-import Title from "./title";
+import Title from "./Title";
 import Timer from "./Timer";
-import TimeData from "./timeData";
+import TimeData from "./TimeData";
 
 const App = () => {
   return (

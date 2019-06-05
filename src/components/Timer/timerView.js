@@ -1,6 +1,6 @@
 import React from "react";
 
-import Time from "../time";
+import Time from "../Time";
 
 export default ({ time, start, stop }) => (
   <div>

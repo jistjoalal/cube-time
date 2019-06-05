@@ -2,7 +2,7 @@ import React from "react";
 
 import { calcAvg, calcAvgN, calcBest, calcBestN } from "../../calc";
 
-import Time from "../time";
+import Time from "../Time";
 
 const Stat = (title, time) => (
   <div>

@@ -2,8 +2,8 @@ import React from "react";
 
 import { withStore } from "../../store";
 
-import Stats from "./stats";
-import TimeList from "./timeList";
+import Stats from "./Stats";
+import TimeList from "./TimeList";
 
 export default () => (
   <div>
