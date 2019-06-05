@@ -36,7 +36,8 @@ export const actions = {
     set({ times: nTimes });
   },
   removeAllTimes: () => {
-    set({ times: [] });
+    const really = window.confirm("Really remove all times?");
+    if (really) set({ times: [] });
   }
 };
 

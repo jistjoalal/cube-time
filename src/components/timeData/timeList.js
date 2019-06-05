@@ -12,7 +12,7 @@ export default class TimeList extends React.Component {
     return (
       <div>
         <h2>Times:</h2>
-        <button onClick={this.removeAll}>Clear</button>
+        <button onClick={actions.removeAllTimes}>Clear</button>
         <div className="timeList">
           <table>
             <tbody>
@@ -33,8 +33,4 @@ export default class TimeList extends React.Component {
       </div>
     );
   }
-  removeAll = e => {
-    const really = window.confirm("Really remove all times?");
-    if (really) actions.removeAllTimes();
-  };
 }
