@@ -1,6 +1,6 @@
 import React from "react";
 
-import withStore from "../withStore";
+import { withStore } from "../../store";
 
 import Stats from "./stats";
 import TimeList from "./timeList";

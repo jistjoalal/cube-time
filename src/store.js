@@ -1,3 +1,4 @@
+import React from "react";
 import uuidv4 from "uuid/v4";
 
 export const store = _ => {
@@ -38,3 +39,30 @@ export const actions = {
     set({ times: [] });
   }
 };
+
+class Tracker extends React.Component {
+  constructor(props) {
+    super(props);
+    const { storeKey } = props;
+    this.state = {
+      [storeKey]: store()[storeKey]
+    };
+  }
+  componentDidMount() {
+    // state reacts to store changes
+    window.addEventListener("store", () => {
+      const { storeKey } = this.props;
+      this.setState({
+        [storeKey]: store()[storeKey]
+      });
+    });
+  }
+  render() {
+    const { Child } = this.props;
+    return <Child {...this.state} />;
+  }
+}
+
+export const withStore = (storeKey, Child) => (
+  <Tracker Child={Child} storeKey={storeKey} />
+);
