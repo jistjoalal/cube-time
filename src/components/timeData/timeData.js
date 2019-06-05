@@ -1,32 +1,15 @@
 import React from "react";
 
-import { store } from "../../store";
+import withStore from "../withStore";
 
-import TimeList from "./timeList";
 import Stats from "./stats";
+import TimeList from "./timeList";
 
-export default class TimeData extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      times: store().times
-    };
-  }
-  componentDidMount() {
-    // state reacts to store changes
-    window.addEventListener("store", () => {
-      this.setState({
-        times: store().times
-      });
-    });
-  }
-  render() {
-    const { times } = this.state;
-    return (
-      <div>
-        <Stats times={times} />
-        <TimeList times={times} />
-      </div>
-    );
-  }
-}
+export default () => {
+  return (
+    <div>
+      {withStore(Stats)}
+      {withStore(TimeList)}
+    </div>
+  );
+};
