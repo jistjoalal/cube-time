@@ -3,6 +3,7 @@ import React from "react";
 import { store, actions } from "../store";
 
 import Time from "./time";
+import Stats from "./stats";
 
 export default class Times extends React.Component {
   constructor() {
@@ -23,10 +24,12 @@ export default class Times extends React.Component {
     const { times } = this.state;
     return (
       <div>
+        <Stats times={times} />
         <h2>Times:</h2>
         <button onClick={this.removeAll}>Clear</button>
-        {times.map(time => (
+        {times.map((time, i) => (
           <div key={time.savedAt}>
+            <span>{times.length - i} - </span>
             <Time time={time.time} />
             <button onClick={() => actions.removeTime(time)}>X</button>
           </div>
