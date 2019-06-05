@@ -4,8 +4,6 @@ A simple rubik's cube timer/log.
 
 ## dev notes/todos
 
-- refactor store actions
-- refactor store function to return only specified store keys
 - export saved times to file
 - styles
 - integration tests

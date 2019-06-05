@@ -17,7 +17,7 @@ export const set = changes => {
 
 export const actions = {
   saveTime: time => {
-    const times = store().times;
+    const { times } = store();
 
     const nTime = {
       time,
@@ -29,7 +29,7 @@ export const actions = {
     set({ times: nTimes });
   },
   removeTime: time => {
-    const times = store().times;
+    const { times } = store();
 
     const nTimes = times.filter(({ id }) => time.id !== id);
 
