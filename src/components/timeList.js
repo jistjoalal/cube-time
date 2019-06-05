@@ -15,17 +15,19 @@ export default class TimeList extends React.Component {
         <button onClick={this.removeAll}>Clear</button>
         <div className="timeList">
           <table>
-            {times.map((time, i) => (
-              <tr key={time.savedAt}>
-                <td>{times.length - i}</td>
-                <td>
-                  <Time time={time.time} />
-                </td>
-                <td>
-                  <button onClick={() => actions.removeTime(time)}>X</button>
-                </td>
-              </tr>
-            ))}
+            <tbody>
+              {times.map((time, i) => (
+                <tr key={time.savedAt}>
+                  <td>{times.length - i}</td>
+                  <td>
+                    <Time time={time.time} />
+                  </td>
+                  <td>
+                    <button onClick={() => actions.removeTime(time)}>X</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </div>
