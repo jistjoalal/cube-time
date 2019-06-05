@@ -10,9 +10,8 @@ export const store = _ => {
 
 export const set = changes => {
   localStorage.setItem("store", JSON.stringify({ ...store(), ...changes }));
-  // dispatch event for reactivity in same tab
-  // https://stackoverflow.com/questions/4679023/bug-with-chromes-localstorage-implementation/4679754#4679754
-  window.dispatchEvent(new StorageEvent("storage", { key: "store" }));
+  // dispatch custom event for reactivity
+  window.dispatchEvent(new Event("store"));
 };
 
 export const actions = {

@@ -14,11 +14,11 @@ export default class TimeData extends React.Component {
   }
   componentDidMount() {
     // state reacts to store changes
-    window.onstorage = () => {
+    window.addEventListener("store", () => {
       this.setState({
         times: store().times
       });
-    };
+    });
   }
   render() {
     const { times } = this.state;

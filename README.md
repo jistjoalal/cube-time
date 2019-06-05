@@ -4,8 +4,8 @@ A simple rubik's cube timer/log.
 
 ## dev notes/todos
 
-- swap out storage event for a custom one
-  - https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
+- refactor store actions
+- create store HOC
 - export saved times to file
 - styles
 - integration tests
