@@ -1,0 +1,11 @@
+.timeList {
+  height: 200px;
+  width: 200px;
+  overflow: auto;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.timeList > table {
+  width: 100%;
+}
