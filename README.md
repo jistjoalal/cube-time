@@ -4,10 +4,9 @@ A simple rubik's cube timer/log.
 
 ## dev notes/todos
 
-- separate timers for C,F,O,P
-- deploy
-- export saved times to file
 - styles
+- leave a note on a time
+- export saved times to file
 - integration tests
 - PWAify
 - progress charts
