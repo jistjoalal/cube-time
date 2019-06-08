@@ -2,6 +2,24 @@
 
 A simple rubik's cube timer/log.
 
+Check it out [here](https://cube-time.netlify.com/).
+
+## Develop
+
+```bash
+git clone https://github.com/jistjoalal/cube-time
+cd cube-time
+npm install
+npm start
+```
+
+## Deploy
+
+```bash
+npm run build
+netlify deploy
+```
+
 ## dev notes/todos
 
 - styles
