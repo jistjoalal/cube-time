@@ -4,6 +4,8 @@ A simple rubik's cube timer/log.
 
 ## dev notes/todos
 
+- separate timers for C,F,O,P
+- deploy
 - export saved times to file
 - styles
 - integration tests

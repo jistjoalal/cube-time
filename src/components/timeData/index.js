@@ -1,3 +1,6 @@
+import React from "react";
 import TimeData from "./TimeData";
 
-export default TimeData;
+import { withStore } from "../../store";
+
+export default () => <div>{withStore("times", TimeData)}</div>;

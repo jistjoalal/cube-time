@@ -11,13 +11,26 @@ export default class Timer extends React.Component {
       time: 0,
       start: null,
       running: false,
-      debounce: false
+      debounce: false,
+      label: ""
     };
   }
   render() {
-    const { time } = this.state;
-    return <TimerView time={time} start={this.start} stop={this.stop} />;
+    const { time, label } = this.state;
+    return (
+      <TimerView
+        time={time}
+        start={this.start}
+        stop={this.stop}
+        label={label}
+        changeLabel={this.changeLabel}
+      />
+    );
   }
+  // Label
+  changeLabel = e => {
+    this.setState({ label: e.target.value });
+  };
   // Timer controls
   start = () => {
     this.setState({ time: 0, start: Date.now(), running: true });
@@ -27,10 +40,11 @@ export default class Timer extends React.Component {
     }, 1);
   };
   stop = () => {
-    if (!this.state.running) return;
+    const { running, time, label } = this.state;
+    if (!running) return;
     this.setState({ running: false });
     clearInterval(this.timer);
-    actions.saveTime(this.state.time);
+    actions.saveTime({ time, label });
   };
   // Keyboard controls
   componentDidMount() {

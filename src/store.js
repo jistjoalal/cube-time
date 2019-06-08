@@ -16,11 +16,12 @@ export const set = changes => {
 };
 
 export const actions = {
-  saveTime: time => {
+  saveTime: ({ time, label = "Default" }) => {
     const { times } = store();
 
     const nTime = {
       time,
+      label,
       id: uuidv4(),
       savedAt: Date.now()
     };
@@ -59,11 +60,11 @@ class Tracker extends React.Component {
     });
   }
   render() {
-    const { Child } = this.props;
-    return <Child {...this.state} />;
+    const { Child, props } = this.props;
+    return <Child {...this.state} {...props} />;
   }
 }
 
-export const withStore = (storeKey, Child) => (
-  <Tracker Child={Child} storeKey={storeKey} />
+export const withStore = (storeKey, Child, props) => (
+  <Tracker Child={Child} storeKey={storeKey} props={props} />
 );
