@@ -2,7 +2,11 @@
 
 A simple rubik's cube timer/log.
 
-Check it out [here](https://cube-time.netlify.com/).
+## Demo
+
+[https://cube-time.netlify.com/](https://cube-time.netlify.com/)
+
+[![screenshot](https://i.imgur.com/iZQT3vA.png)](https://cube-time.netlify.com/)
 
 ## Develop
 
