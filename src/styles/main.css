@@ -20,7 +20,8 @@ a:hover {
 /* vars */
 
 :root {
-  --main-color: brown;
+  --main-color: #a52a2a;
+  --main-color-dark: #7e2323;
   --text-color: #eee;
   --text-color-hover: #ccc;
 }

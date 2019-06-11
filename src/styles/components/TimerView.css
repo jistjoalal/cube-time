@@ -34,4 +34,9 @@
   font-size: 1.2rem;
   background: var(--main-color);
   color: var(--text-color);
+  cursor: pointer;
+}
+
+.timerView__btn:hover {
+  background: var(--main-color-dark);
 }
