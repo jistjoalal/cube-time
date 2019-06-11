@@ -1,0 +1,18 @@
+.stats {
+  min-width: 200px;
+  border: 1px solid var(--main-color-dark);
+  padding: 0;
+}
+
+.stats__stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+.stats__stat:nth-child(2n) {
+  background: var(--text-color);
+  color: var(--main-color);
+}

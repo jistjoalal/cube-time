@@ -2,3 +2,7 @@
   max-width: 750px;
   margin: auto;
 }
+
+.app > *:not(:first-child) {
+  margin: 12px 0;
+}

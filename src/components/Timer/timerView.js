@@ -16,11 +16,12 @@ export default ({ time, start, stop, label, changeLabel }) => (
           value={label}
           onChange={changeLabel}
           placeholder="Label"
+          maxLength="30"
         />
-        <button className="timerView__btn" onClick={start}>
+        <button className="btn" onClick={start}>
           Start
         </button>
-        <button className="timerView__btn" onClick={stop}>
+        <button className="btn" onClick={stop}>
           Stop
         </button>
       </div>

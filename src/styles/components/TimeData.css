@@ -1,0 +1,20 @@
+.timeData {
+  border: 1px solid black;
+  padding: 12px;
+}
+
+.timeData__data {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+.timeData__label {
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  border: 1px solid var(--main-color-dark);
+  background: var(--text-color);
+  color: var(--main-color);
+}

@@ -11,10 +11,6 @@
   display: block;
 }
 
-.timerView__title {
-  font-size: 2rem;
-}
-
 .timerView__info {
   font-size: 0.8rem;
   color: #333;
@@ -24,19 +20,4 @@
 .timerView__label {
   padding: 4px 8px;
   margin: 8px;
-}
-
-.timerView__btn {
-  padding: 4px 8px;
-  margin: 8px;
-  border: 1px solid black;
-  border-radius: 10%;
-  font-size: 1.2rem;
-  background: var(--main-color);
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-.timerView__btn:hover {
-  background: var(--main-color-dark);
 }

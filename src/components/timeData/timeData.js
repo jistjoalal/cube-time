@@ -3,6 +3,8 @@ import React from "react";
 import Stats from "./Stats";
 import TimeList from "./TimeList";
 
+import "../../styles/components/TimeData.css";
+
 export default class TimeData extends React.Component {
   constructor(props) {
     super(props);
@@ -20,21 +22,19 @@ export default class TimeData extends React.Component {
       ? this.props.times.filter(({ label }) => label === labelFilter)
       : this.props.times;
     return (
-      <div>
-        <h2>Time Data:</h2>
-        <label>
-          Label:
-          <select onChange={this.changeLabelFilter}>
-            <option value="">All</option>
-            {labels.map(l => (
-              <option key={l} value={l}>
-                {l}
-              </option>
-            ))}
-          </select>
-        </label>
-        <Stats times={times} />
-        <TimeList times={times} />
+      <div className="timeData">
+        <select className="timeData__label" onChange={this.changeLabelFilter}>
+          <option value="">All</option>
+          {labels.map(l => (
+            <option key={l} value={l}>
+              {l}
+            </option>
+          ))}
+        </select>
+        <div className="timeData__data">
+          <Stats times={times} />
+          <TimeList times={times} />
+        </div>
       </div>
     );
   }

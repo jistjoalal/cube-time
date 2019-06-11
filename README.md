@@ -35,6 +35,7 @@ netlify deploy --prod --dir=./build
 - flash screen / sound trigger (previous finishes)
   - like ghost runs in racing games
 - paginate times?
+- sort times
 - DB-based storage?
   - some way of syncing of offline/online storage would be cool
   - user accounts for online storage
