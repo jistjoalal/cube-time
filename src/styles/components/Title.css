@@ -1,0 +1,12 @@
+.title {
+  background: rgb(133, 55, 55);
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+}
+
+.title__text {
+  font-size: 3rem;
+}

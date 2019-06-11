@@ -4,7 +4,7 @@ import { actions } from "../../store";
 
 import Time from "../Time";
 
-import "./TimeList.css";
+import "../../styles/components/TimeList.css";
 
 export default class TimeList extends React.Component {
   render() {

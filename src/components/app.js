@@ -4,6 +4,8 @@ import Title from "./Title";
 import Timer from "./Timer";
 import TimeData from "./TimeData";
 
+import "../styles/app.css";
+
 const App = () => {
   return (
     <div>
