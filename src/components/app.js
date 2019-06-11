@@ -4,11 +4,11 @@ import Title from "./Title";
 import Timer from "./Timer";
 import TimeData from "./TimeData";
 
-import "../styles/app.css";
+import "../styles/components/App.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Title />
       <Timer />
       <TimeData />
