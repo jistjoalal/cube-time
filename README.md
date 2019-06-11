@@ -25,17 +25,19 @@ netlify deploy --prod --dir=./build
 
 ## dev notes/todos
 
-- styles
 - leave a note on a time
 - export saved times to file
 - integration tests
 - PWAify
+- sort times
+
+## feature ideas
+
 - progress charts
   - track avgs and bests over time
 - flash screen / sound trigger (previous finishes)
   - like ghost runs in racing games
 - paginate times?
-- sort times
 - DB-based storage?
   - some way of syncing of offline/online storage would be cool
   - user accounts for online storage
