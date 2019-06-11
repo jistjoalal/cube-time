@@ -1,5 +1,7 @@
 import React from "react";
 
+import GithubIcon from "./GithubIcon";
+
 import "../styles/components/Title.css";
 
 export default () => (
@@ -12,7 +14,7 @@ export default () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      GitHub
+      <GithubIcon />
     </a>
   </div>
 );
