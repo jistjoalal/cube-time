@@ -40,6 +40,7 @@ https://app.netlify.com/
 - integration tests
 - PWAify
 - sort times
+- **BUG**: timer is not fixed width/position so it glitches while running
 
 ## feature ideas
 
