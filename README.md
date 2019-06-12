@@ -25,11 +25,10 @@ npm start
 ## Deploy
 
 ```bash
-npm run build
 # staging (optional)
-netlify deploy --dir=./build
+npm run deploy-staging
 # production
-netlify deploy --prod --dir=./build
+npm run deploy
 ```
 
 ## dev notes/todos
