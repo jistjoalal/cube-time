@@ -25,7 +25,7 @@ npm start
 
 ## Deploy
 
-Using netlify continuous integration
+Using netlify continuous deployment
 
 ```bash
 https://app.netlify.com/
