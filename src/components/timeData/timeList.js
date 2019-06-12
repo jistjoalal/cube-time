@@ -1,6 +1,7 @@
 import React from "react";
 
 import { actions } from "../../store";
+import { exportTimes } from "../../importExport";
 
 import TimeListRow from "./TimeListRow";
 
@@ -27,6 +28,9 @@ export default ({ times }) => (
     </div>
     <button className="btn" onClick={actions.removeAllTimes}>
       Clear
+    </button>
+    <button className="btn" onClick={exportTimes}>
+      Export
     </button>
   </div>
 );
