@@ -5,13 +5,14 @@ A simple rubik's cube timer/log.
 - See your **best** times, **average** times, **competition** times all at a glance.
 - **Filter/organize** your times to drill in on those PLL algos dragging down your time.
 - Don't waste milliseconds with other timers! Cube Time starts the clock when your hands leave the space bar, and stops it as soon as you touch it again.
+- Own your data! Times saved to your browser's storage. **Import/Export** your times with the click of a button.
 - Open source, minimalist, and modern design. Bootstrapped with [CRA](https://github.com/facebook/create-react-app). Need a feature and know React? Fork the repo and code it up!
 
 ## Demo
 
 [https://cube-time.netlify.com/](https://cube-time.netlify.com/)
 
-[![screenshot](https://i.imgur.com/LXSRAbS.png)](https://cube-time.netlify.com/)
+[![screenshot](https://i.imgur.com/RQCXrqP.png)](https://cube-time.netlify.com/)
 
 ## Develop
 
@@ -24,12 +25,15 @@ npm start
 
 ## Deploy
 
+Using netlify continuous integration
+
 ```bash
-# staging (optional)
-npm run deploy-staging
-# production
-npm run deploy
+https://app.netlify.com/
+> New site from Git
+> Select Repo
 ```
+
+- That's it! Pushes to `origin/master` will trigger deployments automatically.
 
 ## dev notes/todos
 
@@ -50,3 +54,4 @@ npm run deploy
   - user accounts for online storage
     - make times "official" by linking video
 - feature request form
+- automatically update screenshot in readme somehow?
