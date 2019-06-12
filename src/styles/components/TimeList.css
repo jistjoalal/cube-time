@@ -1,4 +1,6 @@
 .timeList {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin-left: 12px;
 }
@@ -30,6 +32,10 @@
 
 .timeList__table > table > tbody > tr > td {
   padding: 4px 8px;
+}
+
+.timeList__row {
+  width: 100px;
 }
 
 .timeList__del {

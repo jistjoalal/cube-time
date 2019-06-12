@@ -26,3 +26,14 @@
 .timerView__cube {
   height: 200px;
 }
+
+@media (max-width: 800px) {
+  .timerView {
+    flex-direction: column-reverse;
+  }
+
+  .timerView__controls {
+    display: flex;
+    flex-direction: column;
+  }
+}

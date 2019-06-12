@@ -16,3 +16,9 @@
   background: var(--text-color);
   color: var(--main-color);
 }
+
+@media (max-width: 800px) {
+  .stats {
+    width: 100%;
+  }
+}

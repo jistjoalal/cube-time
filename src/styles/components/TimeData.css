@@ -18,3 +18,9 @@
   background: var(--text-color);
   color: var(--main-color);
 }
+
+@media (max-width: 800px) {
+  .timeData__data {
+    flex-direction: column-reverse;
+  }
+}

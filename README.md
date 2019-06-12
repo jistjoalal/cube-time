@@ -34,8 +34,7 @@ netlify deploy --prod --dir=./build
 
 ## dev notes/todos
 
-- mobile styles
-- leave a note on a time
+- edit labels
 - export saved times to file
 - integration tests
 - PWAify

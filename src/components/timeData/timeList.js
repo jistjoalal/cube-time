@@ -18,8 +18,8 @@ export default ({ times }) => (
           </tr>
         </thead>
         <tbody>
-          {times.map(time => (
-            <tr className="timeList__row" key={time.savedAt}>
+          {times.map((time, i) => (
+            <tr className="timeList__row" key={i}>
               <td className="timeList__del">
                 <button onClick={() => actions.removeTime(time)}>
                   &times;

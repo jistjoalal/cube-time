@@ -21,7 +21,7 @@ a:hover {
   padding: 4px 8px;
   margin: 8px;
   border: 1px solid black;
-  border-radius: 10%;
+  border-radius: 10px;
   font-size: 1.2rem;
   background: var(--main-color);
   color: var(--text-color);
@@ -39,4 +39,17 @@ a:hover {
   --main-color-dark: #7e2323;
   --text-color: #eee;
   --text-color-hover: #ccc;
+}
+
+/* media */
+
+@media (max-width: 800px) {
+  * {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .btn__timer {
+    font-size: 4rem;
+  }
 }

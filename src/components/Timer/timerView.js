@@ -9,7 +9,7 @@ export default ({ time, start, stop, label, changeLabel }) => (
     <div className="timerView__inner">
       <p className="timerView__info">Space-Up to start, Space-Down to stop.</p>
       <Time time={time} className="timerView__time" />
-      <div>
+      <div className="timerView__controls">
         <input
           className="timerView__label"
           type="text"
@@ -18,15 +18,15 @@ export default ({ time, start, stop, label, changeLabel }) => (
           placeholder="Label"
           maxLength="30"
         />
-        <button className="btn" onClick={start}>
+        <button className="btn btn__timer" onClick={start}>
           Start
         </button>
-        <button className="btn" onClick={stop}>
+        <button className="btn btn__timer" onClick={stop}>
           Stop
         </button>
       </div>
     </div>
     {/* https://commons.wikimedia.org/wiki/File%3ARubik's_cube.svg */}
-    <img className="timerView__cube" alt="cube" src="cube.svg" />
+    <img className="timerView__cube" alt="cube" src="cube.png" />
   </div>
 );
