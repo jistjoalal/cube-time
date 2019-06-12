@@ -33,7 +33,6 @@ npm run deploy
 
 ## dev notes/todos
 
-- import saved times from file
 - integration tests
 - PWAify
 - sort times

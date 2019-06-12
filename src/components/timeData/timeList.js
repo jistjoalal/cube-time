@@ -1,7 +1,7 @@
 import React from "react";
 
 import { actions } from "../../store";
-import { exportTimes } from "../../importExport";
+import { exportTimes, importTimes } from "../../importExport";
 
 import TimeListRow from "./TimeListRow";
 
@@ -32,5 +32,14 @@ export default ({ times }) => (
     <button className="btn" onClick={exportTimes}>
       Export
     </button>
+    <label htmlFor="upload" className="btn">
+      Import
+    </label>
+    <input
+      type="file"
+      id="upload"
+      onChange={importTimes}
+      accept="application/json"
+    />
   </div>
 );
