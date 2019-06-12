@@ -34,6 +34,7 @@ netlify deploy --prod --dir=./build
 
 ## dev notes/todos
 
+- mobile styles
 - leave a note on a time
 - export saved times to file
 - integration tests
@@ -46,6 +47,7 @@ netlify deploy --prod --dir=./build
   - track avgs and bests over time
 - flash screen / sound trigger (previous finishes)
   - like ghost runs in racing games
+  - set custom thresholds/alerts
 - paginate times?
 - DB-based storage?
   - some way of syncing of offline/online storage would be cool

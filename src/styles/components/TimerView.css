@@ -2,7 +2,8 @@
   padding: 12px;
   border: 1px solid black;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .timerView__time {
@@ -20,4 +21,8 @@
 .timerView__label {
   padding: 4px 8px;
   margin: 8px;
+}
+
+.timerView__cube {
+  height: 200px;
 }

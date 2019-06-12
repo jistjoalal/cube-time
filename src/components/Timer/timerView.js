@@ -26,5 +26,7 @@ export default ({ time, start, stop, label, changeLabel }) => (
         </button>
       </div>
     </div>
+    {/* https://commons.wikimedia.org/wiki/File%3ARubik's_cube.svg */}
+    <img className="timerView__cube" alt="cube" src="cube.svg" />
   </div>
 );
