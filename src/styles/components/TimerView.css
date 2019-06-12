@@ -12,12 +12,6 @@
   display: block;
 }
 
-.timerView__info {
-  font-size: 0.8rem;
-  color: #333;
-  margin: 4px;
-}
-
 .timerView__label {
   padding: 4px 8px;
   margin: 8px;

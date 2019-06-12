@@ -33,7 +33,6 @@ npm run deploy
 
 ## dev notes/todos
 
-- edit labels
 - export saved times to file
 - integration tests
 - PWAify

@@ -29,6 +29,15 @@ export const actions = {
 
     set({ times: nTimes });
   },
+  editTime: nTime => {
+    const { times } = store();
+
+    const index = times.findIndex(({ id }) => nTime.id === id);
+    const nTimes = [...times];
+    nTimes.splice(index, 1, nTime);
+
+    set({ times: nTimes });
+  },
   removeTime: time => {
     const { times } = store();
 

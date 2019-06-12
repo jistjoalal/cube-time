@@ -32,6 +32,13 @@ a:hover {
   background: var(--main-color-dark);
 }
 
+.info {
+  font-size: 0.8rem;
+  color: #333;
+  margin: 4px;
+  text-align: right;
+}
+
 /* vars */
 
 :root {

@@ -7,7 +7,7 @@ import "../../styles/components/TimerView.css";
 export default ({ time, start, stop, label, changeLabel, keyLabel }) => (
   <div className="timerView">
     <div className="timerView__inner">
-      <p className="timerView__info">Space-Up to start, Space-Down to stop.</p>
+      <p className="info">Space-Up to start, Space-Down to stop.</p>
       <Time time={time} className="timerView__time" />
       <div className="timerView__controls">
         <input

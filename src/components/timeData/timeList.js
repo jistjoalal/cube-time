@@ -2,7 +2,7 @@ import React from "react";
 
 import { actions } from "../../store";
 
-import Time from "../Time";
+import TimeListRow from "./TimeListRow";
 
 import "../../styles/components/TimeList.css";
 
@@ -18,21 +18,12 @@ export default ({ times }) => (
           </tr>
         </thead>
         <tbody>
-          {times.map((time, i) => (
-            <tr className="timeList__row" key={i}>
-              <td className="timeList__del">
-                <button onClick={() => actions.removeTime(time)}>
-                  &times;
-                </button>
-              </td>
-              <td>
-                <Time time={time.time} />
-              </td>
-              <td>{time.label}</td>
-            </tr>
+          {times.map(time => (
+            <TimeListRow time={time} key={time.id} />
           ))}
         </tbody>
       </table>
+      <p className="info">* Double-click to edit Labels</p>
     </div>
     <button className="btn" onClick={actions.removeAllTimes}>
       Clear

@@ -62,13 +62,17 @@ export default class Timer extends React.Component {
     if (debounce) {
       return this.setState({ debounce: false });
     }
-    if (e.key === " " && !running) {
+    // prevent text input override
+    const shouldFire = e.target === document.body;
+    if (e.key === " " && !running && shouldFire) {
       this.start();
     }
   };
   spaceStop = e => {
     const { running } = this.state;
-    if (e.key === " ") {
+    // prevent text input override
+    const shouldFire = e.target === document.body;
+    if (e.key === " " && shouldFire) {
       e.preventDefault();
       if (running) {
         this.stop();
