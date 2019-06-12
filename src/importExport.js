@@ -2,7 +2,8 @@ import { store } from "./store";
 
 export const exportTimes = _ => {
   // prep file
-  const blob = new Blob([JSON.stringify(store().times)], {
+  const data = JSON.stringify(store().times, null, 2);
+  const blob = new Blob([data], {
     type: "application/json"
   });
   const exportLink = document.createElement("a");
