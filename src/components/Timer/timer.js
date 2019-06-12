@@ -24,12 +24,18 @@ export default class Timer extends React.Component {
         stop={this.stop}
         label={label}
         changeLabel={this.changeLabel}
+        keyLabel={this.keyLabel}
       />
     );
   }
   // Label
   changeLabel = e => {
     this.setState({ label: e.target.value });
+  };
+  keyLabel = e => {
+    if (e.key === "Enter") {
+      e.target.blur();
+    }
   };
   // Timer controls
   start = () => {
