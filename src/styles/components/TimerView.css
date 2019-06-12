@@ -21,6 +21,10 @@
   height: 200px;
 }
 
+.timerView__info--mobile {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .timerView {
     flex-direction: column-reverse;
@@ -30,8 +34,13 @@
     display: none;
   }
 
+  .timerView__info--mobile {
+    display: block;
+    text-align: center !important;
+  }
+
   .timerView__controls {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 }

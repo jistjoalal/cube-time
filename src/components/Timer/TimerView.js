@@ -4,11 +4,22 @@ import Time from "../Time";
 
 import "../../styles/components/TimerView.css";
 
-export default ({ time, start, stop, label, changeLabel, keyLabel }) => (
+export default ({
+  time,
+  start,
+  stop,
+  toggle,
+  label,
+  changeLabel,
+  keyLabel
+}) => (
   <div className="timerView">
     <div className="timerView__inner">
       <p className="timerView__info info">
         Space-Up to start, Space-Down to stop.
+      </p>
+      <p className="info timerView__info--mobile">
+        Tap the cube to start/stop timer.
       </p>
       <Time time={time} className="timerView__time" />
       <div className="timerView__controls">
@@ -30,6 +41,11 @@ export default ({ time, start, stop, label, changeLabel, keyLabel }) => (
       </div>
     </div>
     {/* https://commons.wikimedia.org/wiki/File%3ARubik's_cube.svg */}
-    <img className="timerView__cube" alt="cube" src="cube.png" />
+    <img
+      className="timerView__cube"
+      alt="cube"
+      src="cube.png"
+      onClick={toggle}
+    />
   </div>
 );

@@ -22,6 +22,7 @@ export default class Timer extends React.Component {
         time={time}
         start={this.start}
         stop={this.stop}
+        toggle={this.toggle}
         label={label}
         changeLabel={this.changeLabel}
         keyLabel={this.keyLabel}
@@ -36,6 +37,11 @@ export default class Timer extends React.Component {
     if (e.key === "Enter") {
       e.target.blur();
     }
+  };
+  toggle = () => {
+    const { running } = this.state;
+    if (running) this.stop();
+    else this.start();
   };
   // Timer controls
   start = () => {

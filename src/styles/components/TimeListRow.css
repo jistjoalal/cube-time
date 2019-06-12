@@ -19,6 +19,7 @@
   border-radius: 10%;
   padding: 4px 8px;
   margin: 0 4px;
+  cursor: pointer;
 }
 
 .timeListRow__label {
