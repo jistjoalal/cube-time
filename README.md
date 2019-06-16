@@ -10,9 +10,7 @@ A simple rubik's cube timer/log.
 
 ## Demo
 
-[https://cube-time.netlify.com/](https://cube-time.netlify.com/)
-
-[![Loading...](https://jist-screenshotter.herokuapp.com/https://cube-time.netlify.com/)](https://cube-time.netlify.com/)
+[![Screenshot](https://jist-screenshotter.herokuapp.com/v1/desktop/https://cube-time.netlify.com/)](https://cube-time.netlify.com/)
 
 ## Develop
 
