@@ -36,7 +36,6 @@ https://app.netlify.com/
 ## dev notes/todos
 
 - integration tests
-- PWAify
 - sort times
 
 ## feature ideas

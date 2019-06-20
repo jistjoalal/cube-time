@@ -1,0 +1,20 @@
+{
+  "name": "Cube Time",
+  "short_name": "Cube Time",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#A52A2A",
+  "background_color": "#A52A2A",
+  "display": "standalone"
+}
