@@ -46,6 +46,7 @@ export default ({
       alt="cube"
       src="cube.png"
       onClick={toggle}
+      draggable={false}
     />
   </div>
 );

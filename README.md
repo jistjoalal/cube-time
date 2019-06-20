@@ -38,7 +38,6 @@ https://app.netlify.com/
 - integration tests
 - PWAify
 - sort times
-- **BUG**: click-drag doesn't stop timer
 
 ## feature ideas
 
