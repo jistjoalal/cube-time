@@ -32,6 +32,11 @@
     flex-direction: column-reverse;
   }
 
+  .timerView__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
   .timerView__info {
     display: none;
   }
@@ -41,8 +46,7 @@
     text-align: center !important;
   }
 
-  .timerView__controls {
+  .timerView__startStop {
     display: none;
-    flex-direction: column;
   }
 }

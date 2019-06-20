@@ -22,23 +22,23 @@ export default ({
         Tap the cube to start/stop timer.
       </p>
       <Time time={time} className="timerView__time" />
-      <div className="timerView__controls">
-        <input
-          className="timerView__label"
-          type="text"
-          value={label}
-          onChange={changeLabel}
-          onKeyPress={keyLabel}
-          placeholder="Label"
-          maxLength="30"
-        />
+      <input
+        className="timerView__label"
+        type="text"
+        value={label}
+        onChange={changeLabel}
+        onKeyPress={keyLabel}
+        placeholder="Label"
+        maxLength="30"
+      />
+      <span className="timerView__startStop">
         <button className="btn btn__timer" onClick={start}>
           Start
         </button>
         <button className="btn btn__timer" onClick={stop}>
           Stop
         </button>
-      </div>
+      </span>
     </div>
     {/* https://commons.wikimedia.org/wiki/File%3ARubik's_cube.svg */}
     <img
