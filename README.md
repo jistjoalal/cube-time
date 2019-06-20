@@ -38,7 +38,7 @@ https://app.netlify.com/
 - integration tests
 - PWAify
 - sort times
-- **BUG**: timer is not fixed width/position so it glitches while running
+- **BUG**: click-drag doesn't stop timer
 
 ## feature ideas
 
