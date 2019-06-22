@@ -1,4 +1,5 @@
 import React from "react";
+import NoSleep from "nosleep.js";
 
 import { actions } from "../../store";
 
@@ -14,6 +15,7 @@ export default class Timer extends React.Component {
       debounce: false,
       label: ""
     };
+    this.noSleep = new NoSleep();
   }
   render() {
     const { time, label } = this.state;
@@ -45,6 +47,8 @@ export default class Timer extends React.Component {
   };
   // Timer controls
   start = () => {
+    // prevent mobile screen lock
+    this.noSleep.enable();
     this.setState({ time: 0, start: Date.now(), running: true });
     this.timer = setInterval(() => {
       const { start } = this.state;
@@ -52,6 +56,7 @@ export default class Timer extends React.Component {
     }, 1);
   };
   stop = () => {
+    this.noSleep.disable();
     const { running, time, label } = this.state;
     if (!running) return;
     this.setState({ running: false });
