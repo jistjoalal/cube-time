@@ -52,3 +52,4 @@ https://app.netlify.com/
     - make times "official" by linking video
 - feature request form
 - automatically update screenshot in readme somehow?
+- practice algos
