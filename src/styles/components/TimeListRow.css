@@ -5,11 +5,11 @@
 }
 
 .timeListRow > td {
-  padding: 4px 8px;
+  padding: 4px;
 }
 
 .timeListRow__controls {
-  text-align: center;
+  max-width: 0;
 }
 
 .timeListRow__controls > button {

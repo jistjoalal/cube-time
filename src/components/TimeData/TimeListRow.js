@@ -17,10 +17,12 @@ export default class TimeListRow extends React.Component {
   render() {
     const { time } = this.props;
     const { editing, labelText } = this.state;
+    const savedAt = new Date(time.savedAt).toLocaleDateString();
     return (
       <tr className="timeListRow">
         <td className="timeListRow__controls">
           <button onClick={() => actions.removeTime(time)}>&times;</button>
+          <span>{savedAt}</span>
         </td>
         <td>
           <Time time={time.time} />
