@@ -13,6 +13,7 @@
 
 .timeList__headers > tr > th {
   padding: 4px 8px;
+  user-select: none;
 }
 
 .timeList__table {

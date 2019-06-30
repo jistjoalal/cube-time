@@ -36,10 +36,11 @@ https://app.netlify.com/
 ## dev notes/todos
 
 - integration tests
-- sort times
 
 ## feature ideas
 
+- practice algos
+  - scrape/clone algdb.net into graphql API
 - progress charts
   - track avgs and bests over time
 - flash screen / sound trigger (previous finishes)
@@ -52,4 +53,3 @@ https://app.netlify.com/
     - make times "official" by linking video
 - feature request form
 - automatically update screenshot in readme somehow?
-- practice algos
